@@ -8,19 +8,28 @@
   <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
-  <!-- Navigation -->
-  <nav>
-    <div class="container">
-       <a href="index.html" class="logo"><span class="logo-mark">M</span>M.<span>Consulting</span></a>
-      <ul class="nav-links">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="services.html">Services</a></li>
-        <li><a href="momentum.html" class="active">Approach</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
+  <!-- Header -->
+  <header class="site-header">
+    <div class="container nav-container">
+      <a href="index.html" class="logo">
+        <svg class="logo-mark" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" aria-label="M. Consulting">
+          <circle cx="50" cy="50" r="46" fill="none" stroke="#0B2A4A" stroke-width="3"/>
+          <text x="50" y="66" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="52" font-weight="bold" fill="#0B2A4A">M</text>
+          <circle cx="72" cy="68" r="5" fill="#F26522"/>
+          <line x1="35" y1="74" x2="65" y2="74" stroke="#F26522" stroke-width="4" stroke-linecap="round"/>
+        </svg>
+        <span class="logo-wordmark">M. CONSULTING</span>
+      </a>
+      <nav class="main-nav">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="services.html">Services</a>
+        <a href="momentum.html" class="active">Approach</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <a href="contact.html" class="btn btn-secondary nav-cta">Book a Consultation</a>
     </div>
-  </nav>
+  </header>
 
   <section class="page-header">
     <div class="container">
@@ -125,7 +134,7 @@
     </div>
   </section>
 
-  <footer>
+  <footer class="site-footer">
     <div class="container">
       <ul class="footer-links">
         <li><a href="index.html">Home</a></li>
@@ -134,7 +143,9 @@
         <li><a href="momentum.html">Approach</a></li>
         <li><a href="contact.html">Contact</a></li>
       </ul>
-      <p>&copy; 2026 M. Consulting. All rights reserved.</p>
+      <p class="footer-tagline">People. <span class="accent">Potential.</span> Possibilities.</p>
+      <p class="footer-subtag">True Momentum. Real Transformation.</p>
+      <p class="footer-copy">© 2026 M. Consulting. All rights reserved.</p>
     </div>
   </footer>
 
