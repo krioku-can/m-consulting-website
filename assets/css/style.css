@@ -274,19 +274,22 @@ a:hover { color: var(--orange); }
 .hero-image {
   height: 100%;
   min-height: 580px;
-  background: var(--gray);
+  background: var(--cream);
   display: flex;
   align-items: center;
   justify-content: center;
-  color: var(--navy);
-  font-style: italic;
   overflow: hidden;
+  padding: 48px;
 }
 
 .hero-image img {
-  width: 100%;
+  width: auto;
   height: 100%;
-  object-fit: cover;
+  max-height: 520px;
+  object-fit: contain;
+  object-position: center;
+  border-radius: 6px;
+  box-shadow: 0 20px 60px rgba(11,42,74,0.15);
 }
 
 /* Services Section */
