@@ -7,7 +7,9 @@
     { "src": "momentum.html", "use": "@vercel/static" },
     { "src": "contact.html", "use": "@vercel/static" },
     { "src": "hr.html", "use": "@vercel/static" },
-    { "src": "assets/images/hero-desk.jpg", "use": "@vercel/static" }
+    { "src": "assets/images/hero-desk.jpg", "use": "@vercel/static" },
+    { "src": "assets/css/style.css", "use": "@vercel/static" },
+    { "src": "assets/js/**/*.js", "use": "@vercel/static" }
   ],
   "routes": [
     { "src": "/assets/images/(.*)", "dest": "/assets/images/$1" },
