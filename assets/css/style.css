@@ -1226,6 +1226,35 @@ section { padding: 72px 0; }
 .contact-btn { margin-top: 12px; }
 .contact-info a { font-weight: 600; }
 
+.pricing-note {
+  margin-top: 28px;
+  padding: 16px 18px;
+  background: var(--cream);
+  border-left: 3px solid var(--orange);
+  border-radius: 0 8px 8px 0;
+}
+.pricing-note strong {
+  display: block;
+  font-size: 12px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--navy);
+  margin-bottom: 6px;
+}
+.pricing-note p {
+  margin: 0;
+  font-size: 14px;
+  color: var(--charcoal);
+  line-height: 1.5;
+}
+.price-note {
+  font-size: 14px;
+  font-style: italic;
+  color: var(--charcoal);
+  opacity: 0.8;
+  margin: 4px 0 8px;
+}
+
 .hero-image img {
   object-position: center top;
 }
