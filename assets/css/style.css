@@ -777,3 +777,319 @@ section { padding: 72px 0; }
   .hero-actions { flex-direction: column; align-items: center; }
   .btn { width: 100%; max-width: 280px; }
 }
+
+/* ===== Coaching Page ===== */
+.coaching-intro {
+  max-width: 800px;
+  margin: 0 auto 48px;
+  text-align: center;
+  font-size: 16px;
+  line-height: 1.7;
+}
+.coaching-intro em { color: var(--orange); font-style: italic; }
+
+.focus-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+}
+.focus-card {
+  background: var(--white);
+  border: 1px solid var(--gray);
+  border-left: 4px solid var(--orange);
+  padding: 28px;
+  border-radius: 4px;
+}
+.focus-card h3 {
+  font-family: 'Playfair Display', serif;
+  font-size: 20px;
+  color: var(--navy);
+  margin-bottom: 8px;
+}
+.focus-card p { font-size: 14px; color: var(--charcoal); opacity: 0.85; margin-bottom: 0; }
+.focus-card ul { margin: 12px 0 0; padding-left: 18px; font-size: 14px; color: var(--charcoal); }
+.focus-card li { margin-bottom: 4px; }
+
+.coaching-options {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+.coaching-option {
+  background: var(--white);
+  border: 1px solid var(--gray);
+  padding: 24px;
+  text-align: center;
+  border-radius: 4px;
+}
+.coaching-option h3 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--navy);
+  margin-bottom: 6px;
+}
+.coaching-option p { font-size: 13px; margin: 0; color: var(--charcoal); opacity: 0.8; }
+
+.who-box {
+  background: var(--white);
+  border: 1px solid var(--gray);
+  border-radius: 8px;
+  padding: 32px;
+  margin-bottom: 20px;
+}
+.who-box h3 {
+  font-family: 'Playfair Display', serif;
+  font-size: 22px;
+  color: var(--navy);
+  margin-bottom: 16px;
+}
+.who-box ul { padding-left: 20px; font-size: 14px; color: var(--charcoal); }
+.who-box li { margin-bottom: 6px; }
+.who-box p { font-size: 14px; color: var(--charcoal); }
+
+/* ===== Campus to Career ===== */
+.program-header {
+  text-align: center;
+  margin-bottom: 48px;
+}
+.program-header .price {
+  font-family: 'Playfair Display', serif;
+  font-size: 36px;
+  color: var(--orange);
+  font-weight: 700;
+  margin: 12px 0 4px;
+}
+.program-header .price-sub {
+  font-size: 13px;
+  color: var(--charcoal);
+  opacity: 0.7;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+.session-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+.session-card {
+  background: var(--white);
+  border: 1px solid var(--gray);
+  border-top: 4px solid var(--navy);
+  padding: 24px;
+  border-radius: 4px;
+}
+.session-card .session-num {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: var(--orange);
+  margin-bottom: 8px;
+}
+.session-card h3 {
+  font-family: 'Playfair Display', serif;
+  font-size: 18px;
+  color: var(--navy);
+  margin-bottom: 10px;
+}
+.session-card ul { padding-left: 16px; font-size: 13px; color: var(--charcoal); }
+.session-card li { margin-bottom: 4px; }
+
+.roi-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+.roi-item {
+  text-align: center;
+  padding: 20px;
+}
+.roi-item h3 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--navy);
+  margin-bottom: 8px;
+}
+.roi-item p { font-size: 13px; margin: 0; color: var(--charcoal); opacity: 0.8; }
+
+/* ===== Leadership Highlights ===== */
+.highlights-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+.highlight-card {
+  background: var(--white);
+  border: 1px solid var(--gray);
+  padding: 28px 20px;
+  text-align: center;
+  border-radius: 4px;
+}
+.highlight-card .hl-icon {
+  font-size: 28px;
+  margin-bottom: 12px;
+  color: var(--orange);
+}
+.highlight-card h3 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--navy);
+  margin-bottom: 6px;
+}
+.highlight-card p { font-size: 13px; margin: 0; color: var(--charcoal); opacity: 0.8; }
+
+/* ===== Who We Serve ===== */
+.serve-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+.serve-card {
+  background: var(--white);
+  border: 1px solid var(--gray);
+  padding: 28px;
+  border-radius: 4px;
+  text-align: center;
+}
+.serve-card h3 {
+  font-family: 'Playfair Display', serif;
+  font-size: 20px;
+  color: var(--navy);
+  margin-bottom: 8px;
+}
+.serve-card p { font-size: 14px; margin: 0; color: var(--charcoal); opacity: 0.85; }
+
+/* ===== Business Outcomes ===== */
+.outcomes-metrics {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+.metric-card {
+  text-align: center;
+  padding: 24px 16px;
+}
+.metric-card .metric-num {
+  font-family: 'Playfair Display', serif;
+  font-size: 36px;
+  font-weight: 700;
+  color: var(--orange);
+  line-height: 1;
+  margin-bottom: 8px;
+}
+.metric-card .metric-label {
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--navy);
+}
+
+/* ===== Fractional HR Services Page ===== */
+.fractional-hero {
+  background: var(--navy);
+  padding: 72px 0;
+  text-align: center;
+  color: var(--white);
+}
+.fractional-hero h1 { color: var(--white); font-size: 40px; margin-bottom: 12px; }
+.fractional-hero p { color: rgba(255,255,255,0.85); max-width: 700px; margin: 0 auto; font-size: 15px; }
+
+.service-block {
+  background: var(--white);
+  border: 1px solid var(--gray);
+  border-left: 4px solid var(--orange);
+  padding: 28px;
+  margin-bottom: 20px;
+  border-radius: 4px;
+}
+.service-block h3 {
+  font-family: 'Playfair Display', serif;
+  font-size: 20px;
+  color: var(--navy);
+  margin-bottom: 10px;
+}
+.service-block p { font-size: 14px; color: var(--charcoal); margin-bottom: 12px; }
+.service-block ul { padding-left: 18px; font-size: 14px; color: var(--charcoal); }
+.service-block li { margin-bottom: 4px; }
+
+.engagement-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+.engagement-card {
+  background: var(--white);
+  border: 1px solid var(--gray);
+  padding: 28px;
+  text-align: center;
+  border-radius: 4px;
+}
+.engagement-card h3 {
+  font-family: 'Playfair Display', serif;
+  font-size: 20px;
+  color: var(--navy);
+  margin-bottom: 8px;
+}
+.engagement-card p { font-size: 14px; margin: 0; color: var(--charcoal); opacity: 0.85; }
+
+/* ===== Method Section ===== */
+.method-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+.method-step {
+  text-align: center;
+  padding: 24px 16px;
+}
+.method-step .method-num {
+  width: 44px;
+  height: 44px;
+  margin: 0 auto 16px;
+  background: var(--orange);
+  color: var(--white);
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+}
+.method-step h3 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--navy);
+  margin-bottom: 8px;
+}
+.method-step p { font-size: 14px; margin: 0; color: var(--charcoal); opacity: 0.85; }
+
+@media (max-width: 1024px) {
+  .focus-grid { grid-template-columns: 1fr; }
+  .coaching-options { grid-template-columns: 1fr; }
+  .session-grid { grid-template-columns: 1fr; }
+  .roi-grid { grid-template-columns: 1fr; }
+  .highlights-grid { grid-template-columns: 1fr; }
+  .serve-grid { grid-template-columns: 1fr; }
+  .outcomes-metrics { grid-template-columns: repeat(2, 1fr); }
+  .engagement-grid { grid-template-columns: 1fr; }
+  .method-grid { grid-template-columns: repeat(2, 1fr); }
+}
+@media (max-width: 768px) {
+  .outcomes-metrics { grid-template-columns: 1fr; }
+  .method-grid { grid-template-columns: 1fr; }
+}

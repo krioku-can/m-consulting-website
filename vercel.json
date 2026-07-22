@@ -6,6 +6,8 @@
     { "src": "services.html", "use": "@vercel/static" },
     { "src": "momentum.html", "use": "@vercel/static" },
     { "src": "contact.html", "use": "@vercel/static" },
+    { "src": "coaching.html", "use": "@vercel/static" },
+    { "src": "campus-to-career.html", "use": "@vercel/static" },
     { "src": "hr.html", "use": "@vercel/static" },
     { "src": "assets/images/hero-desk.jpg", "use": "@vercel/static" },
     { "src": "assets/images/marijke-portrait.jpg", "use": "@vercel/static" },
