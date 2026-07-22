@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="512" height="512">
+  <!-- A: Full mark — circle + M + orange dot + underline -->
+  <circle cx="50" cy="50" r="46" fill="none" stroke="#0B2A4A" stroke-width="3"/>
+  <text x="50" y="66" text-anchor="middle" font-family="Georgia, 'Times New Roman', Times, serif" font-size="52" font-weight="bold" fill="#0B2A4A">M</text>
+  <circle cx="72" cy="68" r="5" fill="#F26522"/>
+  <line x1="35" y1="74" x2="65" y2="74" stroke="#F26522" stroke-width="4" stroke-linecap="round"/>
+</svg>

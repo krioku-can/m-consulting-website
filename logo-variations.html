@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>M. Consulting — Logo Variations</title>
+  <script src="assets/js/preview-gate.js"></script>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Montserrat:wght@500;600;700&display=swap');
+    :root {
+      --navy: #0B2A4A;
+      --orange: #F26522;
+      --cream: #F5F1EB;
+      --gray: #E5E7EB;
+      --charcoal: #333;
+      --white: #fff;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: 'Montserrat', system-ui, sans-serif;
+      background: var(--cream);
+      color: var(--charcoal);
+      padding: 40px 24px 80px;
+    }
+    .wrap { max-width: 1100px; margin: 0 auto; }
+    h1 {
+      font-family: 'Playfair Display', serif;
+      color: var(--navy);
+      font-size: 36px;
+      margin-bottom: 8px;
+    }
+    .sub {
+      font-size: 14px;
+      color: #666;
+      margin-bottom: 36px;
+      max-width: 720px;
+      line-height: 1.6;
+    }
+    h2 {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--navy);
+      margin: 40px 0 16px;
+      border-bottom: 2px solid var(--orange);
+      display: inline-block;
+      padding-bottom: 6px;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 20px;
+    }
+    .card {
+      background: var(--white);
+      border: 1px solid var(--gray);
+      border-radius: 12px;
+      padding: 28px 20px 20px;
+      text-align: center;
+      box-shadow: 0 4px 16px rgba(11,42,74,0.05);
+    }
+    .card.dark {
+      background: var(--navy);
+      border-color: var(--navy);
+    }
+    .card.cream {
+      background: var(--cream);
+    }
+    .preview {
+      min-height: 140px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 16px;
+    }
+    .label {
+      font-size: 13px;
+      font-weight: 700;
+      color: var(--navy);
+      margin-bottom: 4px;
+    }
+    .card.dark .label { color: var(--white); }
+    .desc {
+      font-size: 12px;
+      color: #777;
+      line-height: 1.45;
+    }
+    .card.dark .desc { color: rgba(255,255,255,0.7); }
+    .badge {
+      display: inline-block;
+      margin-top: 10px;
+      font-size: 10px;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--orange);
+      border: 1px solid var(--orange);
+      border-radius: 999px;
+      padding: 4px 10px;
+    }
+    .lockup-row {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+    .lockup-card {
+      background: var(--white);
+      border: 1px solid var(--gray);
+      border-radius: 12px;
+      padding: 28px;
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+    }
+    .lockup-card.dark {
+      background: var(--navy);
+      border-color: var(--navy);
+    }
+    .lockup-preview {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 90px;
+      padding: 12px;
+    }
+    .lockup-meta {
+      text-align: center;
+    }
+    .lockup-meta .label { color: var(--navy); }
+    .lockup-card.dark .lockup-meta .label { color: #fff; }
+    .lockup-meta .desc { color: #777; font-size: 12px; }
+    .lockup-card.dark .lockup-meta .desc { color: rgba(255,255,255,0.7); }
+    .wordmark {
+      font-family: 'Playfair Display', Georgia, serif;
+      font-weight: 700;
+      letter-spacing: 0.06em;
+      color: var(--navy);
+      font-size: 28px;
+      margin-left: 14px;
+    }
+    .wordmark.light { color: #fff; }
+    .wordmark.sm { font-size: 18px; margin-left: 10px; }
+    .stack {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+    }
+    .stack .wordmark { margin-left: 0; }
+    .rec {
+      margin-top: 40px;
+      background: #fff;
+      border-left: 4px solid var(--orange);
+      border-radius: 8px;
+      padding: 20px 22px;
+    }
+    .rec h3 {
+      font-family: 'Playfair Display', serif;
+      color: var(--navy);
+      font-size: 20px;
+      margin-bottom: 8px;
+    }
+    .rec p { font-size: 14px; line-height: 1.6; color: #444; }
+    .back {
+      display: inline-block;
+      margin-bottom: 20px;
+      font-size: 12px;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--navy);
+      text-decoration: none;
+    }
+    .back:hover { color: var(--orange); }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <a class="back" href="index.html">← Back to site</a>
+    <h1>Logo Variations</h1>
+    <p class="sub">
+      Options for Marijke to choose from — based on the brand board circular M mark.
+      Primary question from the call: <strong>orange underline under the M, or no underline?</strong>
+      All marks use navy <code>#0B2A4A</code>, orange <code>#F26522</code>, and the same M + orange dot structure.
+    </p>
+
+    <h2>1. Mark Only — Circle Badge</h2>
+    <div class="grid">
+      <!-- A: Full brand (circle + underline + dot) -->
+      <div class="card">
+        <div class="preview">
+          <svg width="120" height="120" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" aria-label="A — Circle, M, Dot, Underline">
+            <circle cx="50" cy="50" r="46" fill="none" stroke="#0B2A4A" stroke-width="3"/>
+            <text x="50" y="66" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="52" font-weight="bold" fill="#0B2A4A">M</text>
+            <circle cx="72" cy="68" r="5" fill="#F26522"/>
+            <line x1="35" y1="74" x2="65" y2="74" stroke="#F26522" stroke-width="4" stroke-linecap="round"/>
+          </svg>
+        </div>
+        <div class="label">A — Full Mark</div>
+        <div class="desc">Circle + M + orange dot + underline<br>Matches current brand board</div>
+        <div class="badge">Current site default</div>
+      </div>
+
+      <!-- B: No underline -->
+      <div class="card">
+        <div class="preview">
+          <svg width="120" height="120" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" aria-label="B — Circle, M, Dot, No Underline">
+            <circle cx="50" cy="50" r="46" fill="none" stroke="#0B2A4A" stroke-width="3"/>
+            <text x="50" y="64" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="54" font-weight="bold" fill="#0B2A4A">M</text>
+            <circle cx="73" cy="70" r="5" fill="#F26522"/>
+          </svg>
+        </div>
+        <div class="label">B — No Underline</div>
+        <div class="desc">Circle + M + orange dot only<br>Cleaner, slightly more modern</div>
+      </div>
+
+      <!-- C: Filled circle + underline -->
+      <div class="card">
+        <div class="preview">
+          <svg width="120" height="120" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" aria-label="C — Filled navy circle">
+            <circle cx="50" cy="50" r="46" fill="#0B2A4A"/>
+            <text x="50" y="66" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="52" font-weight="bold" fill="#F5F1EB">M</text>
+            <circle cx="72" cy="68" r="5" fill="#F26522"/>
+            <line x1="35" y1="74" x2="65" y2="74" stroke="#F26522" stroke-width="4" stroke-linecap="round"/>
+          </svg>
+        </div>
+        <div class="label">C — Filled Badge</div>
+        <div class="desc">Solid navy circle, cream M<br>Strong for favicon / social avatar</div>
+      </div>
+
+      <!-- D: Filled, no underline -->
+      <div class="card">
+        <div class="preview">
+          <svg width="120" height="120" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" aria-label="D — Filled navy, no underline">
+            <circle cx="50" cy="50" r="46" fill="#0B2A4A"/>
+            <text x="50" y="64" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="54" font-weight="bold" fill="#F5F1EB">M</text>
+            <circle cx="73" cy="70" r="5" fill="#F26522"/>
+          </svg>
+        </div>
+        <div class="label">D — Filled, No Underline</div>
+        <div class="desc">Solid navy + cream M + orange dot<br>Most compact avatar option</div>
+      </div>
+    </div>
+
+    <h2>2. Mark Only — On Dark / Cream</h2>
+    <div class="grid">
+      <div class="card dark">
+        <div class="preview">
+          <svg width="120" height="120" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="50" cy="50" r="46" fill="none" stroke="#F5F1EB" stroke-width="3"/>
+            <text x="50" y="66" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="52" font-weight="bold" fill="#F5F1EB">M</text>
+            <circle cx="72" cy="68" r="5" fill="#F26522"/>
+            <line x1="35" y1="74" x2="65" y2="74" stroke="#F26522" stroke-width="4" stroke-linecap="round"/>
+          </svg>
+        </div>
+        <div class="label">E — Reversed + Underline</div>
+        <div class="desc">For navy headers, email signatures, dark slides</div>
+      </div>
+      <div class="card dark">
+        <div class="preview">
+          <svg width="120" height="120" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="50" cy="50" r="46" fill="none" stroke="#F5F1EB" stroke-width="3"/>
+            <text x="50" y="64" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="54" font-weight="bold" fill="#F5F1EB">M</text>
+            <circle cx="73" cy="70" r="5" fill="#F26522"/>
+          </svg>
+        </div>
+        <div class="label">F — Reversed, No Underline</div>
+        <div class="desc">Dark-mode version of option B</div>
+      </div>
+      <div class="card cream">
+        <div class="preview">
+          <svg width="120" height="120" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="50" cy="50" r="46" fill="none" stroke="#0B2A4A" stroke-width="3"/>
+            <text x="50" y="66" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="52" font-weight="bold" fill="#0B2A4A">M</text>
+            <circle cx="72" cy="68" r="5" fill="#F26522"/>
+            <line x1="35" y1="74" x2="65" y2="74" stroke="#F26522" stroke-width="4" stroke-linecap="round"/>
+          </svg>
+        </div>
+        <div class="label">G — On Cream</div>
+        <div class="desc">How it sits on the site background</div>
+      </div>
+      <div class="card">
+        <div class="preview">
+          <svg width="120" height="120" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+            <!-- No circle, just M + dot + underline -->
+            <text x="50" y="64" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="64" font-weight="bold" fill="#0B2A4A">M</text>
+            <circle cx="78" cy="68" r="6" fill="#F26522"/>
+            <line x1="30" y1="76" x2="70" y2="76" stroke="#F26522" stroke-width="5" stroke-linecap="round"/>
+          </svg>
+        </div>
+        <div class="label">H — Open Mark</div>
+        <div class="desc">No circle — just M + dot + underline<br>Good for large headers / watermarks</div>
+      </div>
+    </div>
+
+    <h2>3. Horizontal Lockups (Mark + Wordmark)</h2>
+    <div class="lockup-row">
+      <div class="lockup-card">
+        <div class="lockup-preview">
+          <svg width="56" height="56" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="50" cy="50" r="46" fill="none" stroke="#0B2A4A" stroke-width="3"/>
+            <text x="50" y="66" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="52" font-weight="bold" fill="#0B2A4A">M</text>
+            <circle cx="72" cy="68" r="5" fill="#F26522"/>
+            <line x1="35" y1="74" x2="65" y2="74" stroke="#F26522" stroke-width="4" stroke-linecap="round"/>
+          </svg>
+          <span class="wordmark">M. CONSULTING</span>
+        </div>
+        <div class="lockup-meta">
+          <div class="label">I — Primary Lockup (with underline)</div>
+          <div class="desc">Current website header style</div>
+        </div>
+      </div>
+
+      <div class="lockup-card">
+        <div class="lockup-preview">
+          <svg width="56" height="56" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="50" cy="50" r="46" fill="none" stroke="#0B2A4A" stroke-width="3"/>
+            <text x="50" y="64" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="54" font-weight="bold" fill="#0B2A4A">M</text>
+            <circle cx="73" cy="70" r="5" fill="#F26522"/>
+          </svg>
+          <span class="wordmark">M. CONSULTING</span>
+        </div>
+        <div class="lockup-meta">
+          <div class="label">J — Lockup (no underline)</div>
+          <div class="desc">Same lockup, cleaner mark</div>
+        </div>
+      </div>
+
+      <div class="lockup-card dark">
+        <div class="lockup-preview">
+          <svg width="56" height="56" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="50" cy="50" r="46" fill="none" stroke="#F5F1EB" stroke-width="3"/>
+            <text x="50" y="66" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="52" font-weight="bold" fill="#F5F1EB">M</text>
+            <circle cx="72" cy="68" r="5" fill="#F26522"/>
+            <line x1="35" y1="74" x2="65" y2="74" stroke="#F26522" stroke-width="4" stroke-linecap="round"/>
+          </svg>
+          <span class="wordmark light">M. CONSULTING</span>
+        </div>
+        <div class="lockup-meta">
+          <div class="label">K — Reversed Lockup</div>
+          <div class="desc">For navy website sections / presentation covers</div>
+        </div>
+      </div>
+
+      <div class="lockup-card">
+        <div class="lockup-preview">
+          <div class="stack">
+            <svg width="72" height="72" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="50" cy="50" r="46" fill="none" stroke="#0B2A4A" stroke-width="3"/>
+              <text x="50" y="66" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="52" font-weight="bold" fill="#0B2A4A">M</text>
+              <circle cx="72" cy="68" r="5" fill="#F26522"/>
+              <line x1="35" y1="74" x2="65" y2="74" stroke="#F26522" stroke-width="4" stroke-linecap="round"/>
+            </svg>
+            <span class="wordmark sm">M. CONSULTING</span>
+          </div>
+        </div>
+        <div class="lockup-meta">
+          <div class="label">L — Stacked Lockup</div>
+          <div class="desc">Centered mark over wordmark — good for mobile / profile images / business cards</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="rec">
+      <h3>Recommendation</h3>
+      <p>
+        Keep <strong>A / I</strong> (with underline) as the primary brand mark — it matches her brand board and feels finished.
+        Use <strong>B / J</strong> (no underline) as a simplified alternate when the mark gets small (favicon, app icon, tiny nav).
+        Use <strong>C / D</strong> filled badges for social avatars and LinkedIn profile image.
+      </p>
+      <p style="margin-top:10px;">
+        Decision needed from Marijke: <strong>underline or no underline</strong> for the main mark on the website.
+      </p>
+    </div>
+  </div>
+</body>
+</html>
