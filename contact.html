@@ -4,13 +4,12 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Contact — M. Consulting</title>
-  <meta name="description" content="Schedule a conversation with M. Consulting. Let's build momentum together.">
+  <meta name="description" content="Schedule a conversation with M. Consulting. Fractional CHRO leadership, coaching, and strategic advisory.">
   <link rel="stylesheet" href="assets/css/style.css">
   <script src="assets/js/preview-gate.js"></script>
 </head>
 <body>
 
-  <!-- Header -->
   <header class="site-header">
     <div class="container nav-container">
       <a href="index.html" class="logo">
@@ -26,32 +25,41 @@
         <a href="index.html">Home</a>
         <a href="about.html">About</a>
         <a href="services.html">Services</a>
-        <a href="hr.html">Fractional CHRO</a>
         <a href="coaching.html">Coaching</a>
         <a href="momentum.html">Approach</a>
         <a href="contact.html" class="active">Contact</a>
       </nav>
-      <a href="contact.html" class="btn btn-secondary nav-cta">Book a Consultation</a>
+      <a href="contact.html#inquiry" class="btn btn-secondary nav-cta">Book a Consultation</a>
     </div>
   </header>
 
   <section class="page-header">
     <div class="container">
       <h1>Let's Talk</h1>
-      <p>Whether you need fractional CHRO leadership, M&amp;A integration support, or a strategic partner for your next transformation — I'd love to hear from you.</p>
+      <p>Whether you need fractional CHRO leadership, M&amp;A integration support, or coaching through a transition — I'd love to hear from you.</p>
     </div>
   </section>
 
   <section>
     <div class="container">
+      <div id="sent-banner" class="sent-banner" hidden>
+        <strong>Message sent.</strong> Thank you — Marijke will follow up shortly.
+      </div>
       <div class="contact-grid">
-        <div>
+        <div id="inquiry">
           <h2>Send a Message</h2>
-          <form class="contact-form">
-            <input type="text" placeholder="Your Name" required>
-            <input type="email" placeholder="Your Email" required>
-            <input type="text" placeholder="Company / Organization">
-            <select>
+          <p class="contact-lead">Share a bit about what you're working on. First conversations are exploratory — no obligation.</p>
+          <form class="contact-form" action="https://formsubmit.co/marijke.woodruff@gmail.com" method="POST">
+            <input type="hidden" name="_subject" value="New inquiry — M. Consulting website">
+            <input type="hidden" name="_captcha" value="false">
+            <input type="hidden" name="_template" value="table">
+            <input type="hidden" name="_next" value="https://m-consulting-website.vercel.app/contact.html?sent=1">
+            <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off">
+
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <input type="text" name="company" placeholder="Company / Organization">
+            <select name="interest" required>
               <option value="">I'm interested in...</option>
               <option>Fractional CHRO Leadership</option>
               <option>Interim Executive Leadership</option>
@@ -60,22 +68,24 @@
               <option>HR Digital Enablement &amp; AI</option>
               <option>Executive Advisory &amp; Coaching</option>
               <option>Leadership Development</option>
+              <option>Campus to Career Coaching</option>
               <option>Something else</option>
             </select>
-            <textarea placeholder="Tell me about what you're working on..." required></textarea>
+            <textarea name="message" placeholder="Tell me about what you're working on..." required></textarea>
             <button type="submit" class="btn btn-primary">Send Message</button>
           </form>
         </div>
         <div class="contact-info">
           <h2>Other Ways to Connect</h2>
-          <p><strong>Email:</strong> marijke.woodruff@gmail.com</p>
+          <p><strong>Email:</strong> <a href="mailto:marijke.woodruff@gmail.com">marijke.woodruff@gmail.com</a></p>
+          <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/marijke-woodruff-0498597" target="_blank" rel="noopener">Marijke Woodruff</a></p>
           <p><strong>Location:</strong> Cincinnati, OH</p>
 
-          <h3 style="margin-top: var(--space-md);">Let's Find Time</h3>
-          <p>Prefer to book directly? Schedule a conversation and we'll identify the right engagement structure for your needs.</p>
-          <a href="#" class="btn btn-primary" style="margin-top: var(--space-sm);">Schedule a Conversation</a>
+          <h3 class="contact-subhead">Prefer email?</h3>
+          <p>Reach out directly and we'll find time for a conversation about the right engagement structure.</p>
+          <a href="mailto:marijke.woodruff@gmail.com?subject=M.%20Consulting%20Consultation%20Request" class="btn btn-primary contact-btn">Email Marijke</a>
 
-          <h3 style="margin-top: var(--space-md);">What to Expect</h3>
+          <h3 class="contact-subhead">What to Expect</h3>
           <p>Our first conversation is an opportunity to understand your business, your challenges, and your goals. There's no obligation — just a candid discussion about whether and how we can help.</p>
         </div>
       </div>
@@ -88,10 +98,10 @@
         <li><a href="index.html">Home</a></li>
         <li><a href="about.html">About</a></li>
         <li><a href="services.html">Services</a></li>
-        <li><a href="hr.html">Fractional CHRO</a></li>
         <li><a href="coaching.html">Coaching</a></li>
         <li><a href="momentum.html">Approach</a></li>
         <li><a href="contact.html">Contact</a></li>
+        <li><a href="https://www.linkedin.com/in/marijke-woodruff-0498597" target="_blank" rel="noopener">LinkedIn</a></li>
       </ul>
       <p class="footer-tagline">People. <span class="accent">Potential.</span> Possibilities.</p>
       <p class="footer-subtag">True Momentum. Real Transformation.</p>
@@ -99,5 +109,11 @@
     </div>
   </footer>
 
+  <script>
+    if (new URLSearchParams(location.search).get('sent') === '1') {
+      var b = document.getElementById('sent-banner');
+      if (b) { b.hidden = false; b.scrollIntoView({ behavior: 'smooth', block: 'center' }); }
+    }
+  </script>
 </body>
 </html>
